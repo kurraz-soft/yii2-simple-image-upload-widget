@@ -1,6 +1,6 @@
 <?php
 
-namespace kurraz\image_upload;
+namespace kurraz\yii2_simple_image_upload_widget;
 
 use yii\base\Widget;
 
