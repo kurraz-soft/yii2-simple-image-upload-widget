@@ -1,7 +1,7 @@
 {
   "name": "kurraz-soft/yii2-simple-image-upload-widget",
   "description": "Simple Yii2 image upload widget",
-  "minimum-stability": "dev",
+  "minimum-stability": "stable",
   "license": "MIT",
   "authors": [
     {
@@ -9,6 +9,12 @@
       "email": "dev@kurraz-soft.com"
     }
   ],
+
+  "autoload": {
+      "files": [
+        "ImageUpload.php"
+      ]
+  },
   "require": {
     "yiisoft/yii2": ">=2.0"
   }
