@@ -15,7 +15,9 @@ use yii\helpers\Html;
         <?= Html::error($model,$attribute) ?>
     </div>
     <?php if($model->$attribute): ?>
-        <img src="<?= $upload_path ?>/<?= $model->$attribute ?>">
+        <div style="display: inline-block">
+            <img src="<?= $upload_path ?>/<?= $model->$attribute ?>" id="image-uploaded-<?= $attribute ?>">
+        </div>
         <br>
         <?= Html::activeCheckbox($model,$attribute . '_delete',['label' => '']) ?> Удалить
     <?php endif; ?>
